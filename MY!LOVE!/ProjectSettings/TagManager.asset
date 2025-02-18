@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -11,9 +11,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Npc
+  - Objective
   - 
   - 
   - 
@@ -41,3 +41,29 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 4108053661
+    locked: 0
+  - name: Floor
+    uniqueID: 1669598945
+    locked: 0
+  - name: Wall
+    uniqueID: 3267063139
+    locked: 0
+  - name: Decoration
+    uniqueID: 1430040693
+    locked: 0
+  - name: Npc
+    uniqueID: 653775777
+    locked: 0
+  - name: Objective
+    uniqueID: 1896500013
+    locked: 0
+  - name: Player
+    uniqueID: 56614587
+    locked: 0
+  - name: Overlay
+    uniqueID: 2567518705
+    locked: 0
+  m_RenderingLayers:
+  - Default
