@@ -17,22 +17,33 @@ public class PlayerMove : MonoBehaviour
     {
         if (canMove)
         {
+            Vector2 move = new Vector2();
+
             if (Input.GetKey(KeyCode.A))
             {
-
+                move += Vector2.left;
             }
             if (Input.GetKey(KeyCode.D))
             {
-
+                move += Vector2.right;
             }
             if (Input.GetKey(KeyCode.W))
             {
-
+                move += Vector2.up;
             }
             if (Input.GetKey(KeyCode.S))
             {
-
+                move += Vector2.down;
             }
+
+            move = move.normalized;
+
+            rb.linearVelocity = move * moveSpeed;
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 }
