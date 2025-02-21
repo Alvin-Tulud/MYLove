@@ -5,10 +5,12 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D rb;
     public float moveSpeed = 5.0f;
     public bool canMove = true;
+    private Camera cam;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -40,10 +42,7 @@ public class PlayerMove : MonoBehaviour
 
             rb.linearVelocity = move * moveSpeed;
         }
-    }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
+        cam.gameObject.transform.position = transform.position;
     }
 }
